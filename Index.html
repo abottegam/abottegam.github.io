@@ -1,7 +1,631 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with Github pages.</p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adriana Bottega | Computer Engineer</title>
+  <meta name="description" content="Portfolio website for Adriana Bottega, Computer Engineer">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="dark">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <span class="text-primary">&lt;</span>
+        <span>AB</span>
+        <span class="text-primary">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Mobile Navigation Toggle -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+      <div class="container">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="circuit-bg"></div>
+      <div class="stitch-pattern"></div>
+      
+      <div class="hero-content">
+        <div class="hero-card">
+          <h1 class="hero-title">
+            <span id="typewriter"></span>
+            <span class="cursor">_</span>
+          </h1>
+          <h2 class="hero-subtitle">Computer Engineer</h2>
+          <p class="hero-description">
+            Building the future with code, circuits, and creativity
+          </p>
+        </div>
+        
+        <div class="hero-buttons">
+          <a href="#projects" class="pixel-btn">View Projects</a>
+          <a href="#contact" class="pixel-btn">Contact Me</a>
+        </div>
+        
+        <div class="scroll-indicator">
+          <a href="#about" aria-label="Scroll down">
+            <i data-feather="arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="text-primary">&lt;</span> About Me <span class="text-primary">/&gt;</span>
+        </h2>
+        
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="retro-card">
+              <p>
+                I'm a Computer Engineering student at Florida Polytechnic University with a passion for embedded systems, 
+                software development, and creative problem-solving.
+              </p>
+              <p>
+                My unique background combines technical expertise with creative interests like crocheting, 
+                which inspires my approach to engineering challenges.
+              </p>
+              <p>
+                I'm fluent in Spanish and English, with intermediate Italian skills, and I enjoy applying my 
+                multicultural perspective to collaborative projects.
+              </p>
+            </div>
+          </div>
+          
+          <div class="about-image">
+            <div class="pixel-border">
+              <img src="https://via.placeholder.com/256" alt="Adriana Bottega">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="text-primary">&lt;</span> Skills <span class="text-primary">/&gt;</span>
+        </h2>
+        
+        <div class="skills-tabs">
+          <div class="tabs-list">
+            <button class="tab-trigger active" data-tab="programming">
+              <i data-feather="code"></i>
+              <span>Programming</span>
+            </button>
+            <button class="tab-trigger" data-tab="tools">
+              <i data-feather="terminal"></i>
+              <span>Tools</span>
+            </button>
+            <button class="tab-trigger" data-tab="hardware">
+              <i data-feather="cpu"></i>
+              <span>Hardware</span>
+            </button>
+            <button class="tab-trigger" data-tab="software">
+              <i data-feather="monitor"></i>
+              <span>Software</span>
+            </button>
+            <button class="tab-trigger" data-tab="languages">
+              <i data-feather="globe"></i>
+              <span>Languages</span>
+            </button>
+            <button class="tab-trigger" data-tab="certifications">
+              <i data-feather="award"></i>
+              <span>Certifications</span>
+            </button>
+          </div>
+          
+          <div class="tab-content active" id="programming-content">
+            <div class="retro-card">
+              <h3 class="tab-title">
+                <i data-feather="code"></i>
+                Programming
+              </h3>
+              <div class="skills-grid">
+                <div class="skill-item">C</div>
+                <div class="skill-item">C++</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">JavaFX</div>
+                <div class="skill-item">Linux scripting</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="tools-content">
+            <div class="retro-card">
+              <h3 class="tab-title">
+                <i data-feather="terminal"></i>
+                Tools
+              </h3>
+              <div class="skills-grid">
+                <div class="skill-item">Microsoft Tools</div>
+                <div class="skill-item">PowerPoint</div>
+                <div class="skill-item">Excel</div>
+                <div class="skill-item">Word</div>
+                <div class="skill-item">Microchip Studio IDE</div>
+                <div class="skill-item">Questa</div>
+                <div class="skill-item">HSpice</div>
+                <div class="skill-item">Arduino</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="hardware-content">
+            <div class="retro-card">
+              <h3 class="tab-title">
+                <i data-feather="cpu"></i>
+                Hardware
+              </h3>
+              <div class="skills-grid">
+                <div class="skill-item">AVR assembly</div>
+                <div class="skill-item">Verilog HDL</div>
+                <div class="skill-item">FPGA</div>
+                <div class="skill-item">Embedded Systems</div>
+                <div class="skill-item">Circuit Design</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="software-content">
+            <div class="retro-card">
+              <h3 class="tab-title">
+                <i data-feather="monitor"></i>
+                Software
+              </h3>
+              <div class="skills-grid">
+                <div class="skill-item">Unreal Engine 5</div>
+                <div class="skill-item">3D Graphics</div>
+                <div class="skill-item">Game Development</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="languages-content">
+            <div class="retro-card">
+              <h3 class="tab-title">
+                <i data-feather="globe"></i>
+                Languages
+              </h3>
+              <div class="skills-grid">
+                <div class="skill-item">English (Fluent)</div>
+                <div class="skill-item">Spanish (Fluent)</div>
+                <div class="skill-item">Italian (Intermediate)</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="certifications-content">
+            <div class="retro-card">
+              <h3 class="tab-title">
+                <i data-feather="award"></i>
+                Certifications
+              </h3>
+              <div class="skills-grid">
+                <div class="skill-item">PCAP – Certified Associate Python Programmer</div>
+                <div class="skill-item">PCEP – Certified Entry-level Python Programmer</div>
+                <div class="skill-item">CAIE - Certified Artificial Intelligence Engineer (In progress)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="text-primary">&lt;</span> Projects <span class="text-primary">/&gt;</span>
+        </h2>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">JavaFX Full Stack Game</h3>
+                <p class="project-meta">Spring 2024 • Florida Polytechnic University</p>
+              </div>
+              <div class="project-icon">
+                <i data-feather="gamepad"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-description">
+                Designed and developed a Java/JavaFX game from concept to completion, incorporating both front-end and back-end functionalities.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">JavaFX</span>
+                <span class="tag">Game Development</span>
+                <span class="tag">Full Stack</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="project-btn" data-project="1">View Details</button>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">Embedded Systems Design</h3>
+                <p class="project-meta">Fall 2023 • Florida Polytechnic University</p>
+              </div>
+              <div class="project-icon">
+                <i data-feather="cpu"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-description">
+                Designed, developed, and constructed an automated knitting machine consisting of a 3D printed, two-servo-controlled, robot arm and a DC motor-powered rotating loom. We directly manipulated the registers of the Atmega328 using embedded C to control the motors.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Embedded C</span>
+                <span class="tag">Atmega328</span>
+                <span class="tag">3D Printing</span>
+                <span class="tag">Robotics</span>
+                <span class="tag">Knitting</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="project-btn" data-project="2">View Details</button>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-header">
+              <div>
+                <h3 class="project-title">FPGA Circuit Design</h3>
+                <p class="project-meta">Spring 2023 • Florida Polytechnic University</p>
+              </div>
+              <div class="project-icon">
+                <i data-feather="sliders"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-description">
+                Designed and executed a digital stopwatch using Boolean Expression to specify the circuit, implemented Verilog in Questa, and tested on an FPGA board. Utilized sequential logic by employing flip-flops, ripple carry adder, and clock divider.
+              </p>
+              <div class="project-tags">
+                <span class="tag">FPGA</span>
+                <span class="tag">Verilog</span>
+                <span class="tag">Digital Design</span>
+                <span class="tag">Boolean Logic</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <button class="project-btn" data-project="3">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="text-primary">&lt;</span> Experience <span class="text-primary">/&gt;</span>
+        </h2>
+        
+        <div class="experience-timeline">
+          <!-- Experience 1 -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title">Smart City Student Intern</h3>
+                <p class="experience-company">City of Winter Haven, Technology Services Department</p>
+              </div>
+            </div>
+            <div class="experience-content">
+              <div class="experience-meta">
+                <span><i data-feather="calendar"></i> June 2024 - Current</span>
+                <span><i data-feather="map-pin"></i> Winter Haven, Florida</span>
+              </div>
+              
+              <ul class="experience-list">
+                <li>Automated and facilitated the filing of 200+ bills using a python script achieving 100% satisfaction from the finance department.</li>
+                <li>Developed city-scape simulation of Winter Haven and player-NPC interactions, integrated with ChatGPT API, on Unreal Engine 5.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Experience 2 -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title">Teaching Assistant for C</h3>
+                <p class="experience-company">Florida Polytechnic University, Computer Science Department</p>
+              </div>
+            </div>
+            <div class="experience-content">
+              <div class="experience-meta">
+                <span><i data-feather="calendar"></i> May 2023 - August 2024</span>
+                <span><i data-feather="map-pin"></i> Lakeland, Florida</span>
+              </div>
+              
+              <ul class="experience-list">
+                <li>Assessed and provided feedback on 500+ homework assignments, resulting in a 16% increased student productivity.</li>
+                <li>Worked one-on-one with students achieving a 20% increased productivity.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Experience 3 -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title">Orientation Leader</h3>
+                <p class="experience-company">Florida Polytechnic University</p>
+              </div>
+            </div>
+            <div class="experience-content">
+              <div class="experience-meta">
+                <span><i data-feather="calendar"></i> May 2023 - August 2024</span>
+                <span><i data-feather="map-pin"></i> Lakeland, Florida</span>
+              </div>
+              
+              <ul class="experience-list">
+                <li>Coordinated and lead virtual and in-person meetings with 500+ incoming students and promoted interaction.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Experience 4 -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3 class="experience-title">SPHE Vice President of Technology</h3>
+                <p class="experience-company">Florida Polytechnic University</p>
+              </div>
+            </div>
+            <div class="experience-content">
+              <div class="experience-meta">
+                <span><i data-feather="calendar"></i> May 2023 - Current</span>
+                <span><i data-feather="map-pin"></i> Lakeland, Florida</span>
+              </div>
+              
+              <ul class="experience-list">
+                <li>Organize and supervise programming boot camps and technology-related events and activities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="text-primary">&lt;</span> Education <span class="text-primary">/&gt;</span>
+        </h2>
+        
+        <div class="education-timeline">
+          <!-- Education 1 -->
+          <div class="education-card">
+            <div class="education-header">
+              <div>
+                <h3 class="education-title">
+                  <i data-feather="award"></i>
+                  Bachelor's Degree, Computer Engineering
+                </h3>
+                <p class="education-institution">Florida Polytechnic University</p>
+              </div>
+              <div class="education-gpa">
+                GPA: 3.96
+              </div>
+            </div>
+            <div class="education-content">
+              <div class="education-meta">
+                <span><i data-feather="calendar"></i> Expected Graduation - Spring 2025</span>
+              </div>
+              
+              <div class="education-achievements">
+                <h4 class="education-subtitle">
+                  <i data-feather="award"></i>
+                  Achievements
+                </h4>
+                <ul class="education-list">
+                  <li>President's List: Fall 2022, Spring 2023, Fall 2023, Spring 2024</li>
+                </ul>
+              </div>
+              
+              <div class="education-courses">
+                <h4 class="education-subtitle">
+                  <i data-feather="book-open"></i>
+                  Relevant Coursework
+                </h4>
+                <div class="courses-grid">
+                  <div class="course-item">Operating Systems Concepts</div>
+                  <div class="course-item">Digital Signal Processing</div>
+                  <div class="course-item">Data Structures and Algorithms</div>
+                  <div class="course-item">Computer Networks</div>
+                  <div class="course-item">Systems and Signals</div>
+                  <div class="course-item">Autonomous Robotic Systems</div>
+                  <div class="course-item">Digital Electronics</div>
+                  <div class="course-item">Control Theory</div>
+                  <div class="course-item">Object Oriented Programming</div>
+                  <div class="course-item">Circuits</div>
+                  <div class="course-item">Digital Logic Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Education 2 -->
+          <div class="education-card">
+            <div class="education-header">
+              <div>
+                <h3 class="education-title">
+                  <i data-feather="award"></i>
+                  Associate's Degree in Liberal Arts
+                </h3>
+                <p class="education-institution">Broward College</p>
+              </div>
+              <div class="education-gpa">
+                GPA: 3.6
+              </div>
+            </div>
+            <div class="education-content">
+              <div class="education-meta">
+                <span><i data-feather="calendar"></i> Fall 2020 - Summer 2022</span>
+              </div>
+              
+              <div class="education-achievements">
+                <h4 class="education-subtitle">
+                  <i data-feather="award"></i>
+                  Achievements
+                </h4>
+                <ul class="education-list">
+                  <li>President's List: Spring 2021, Summer 2021</li>
+                  <li>Dean's List: Spring 2022, Summer 2022</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="text-primary">&lt;</span> Contact Me <span class="text-primary">/&gt;</span>
+        </h2>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="retro-card">
+              <h3 class="contact-subtitle">Get In Touch</h3>
+              <p class="contact-text">
+                I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
+                I'll try my best to get back to you!
+              </p>
+              
+              <div class="contact-links">
+                <a href="mailto:abottegam@outlook.com" class="contact-link">
+                  <i data-feather="mail"></i>
+                  abottegam@outlook.com
+                </a>
+                
+                <a href="https://www.linkedin.com/in/adrianabottega/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <i data-feather="linkedin"></i>
+                  linkedin.com/in/adrianabottega
+                </a>
+                
+                <a href="https://github.com/abottegam" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <i data-feather="github"></i>
+                  github.com/abottegam
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form id="contact-form" class="retro-card">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="pixel-btn submit-btn">
+                <i data-feather="send"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-copyright">
+          <p>© <span id="current-year"></span> Adriana R. Bottega. All rights reserved.</p>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://github.com/abottegam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i data-feather="github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/adrianabottega/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i data-feather="linkedin"></i>
+          </a>
+          <a href="mailto:abottegam@outlook.com" aria-label="Email">
+            <i data-feather="mail"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-tech">
+        <p>Built with HTML, CSS, and JavaScript</p>
+        <div class="tech-tags">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Responsive</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
+
