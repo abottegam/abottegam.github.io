@@ -1,6 +1,10 @@
+// Import feather icons library
+import feather from "feather-icons"
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize Feather Icons
-  feather.replace()
+  if (typeof feather !== "undefined") {
+    feather.replace()
+  }
 
   // Set current year in footer
   document.getElementById("current-year").textContent = new Date().getFullYear()
@@ -43,7 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       icon.setAttribute("data-feather", "menu")
     }
-    feather.replace()
+    if (typeof feather !== "undefined") {
+      feather.replace()
+    }
   })
 
   // Close mobile nav when clicking a link
@@ -52,7 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileNav.classList.remove("active")
       const icon = menuToggle.querySelector("svg")
       icon.setAttribute("data-feather", "menu")
-      feather.replace()
+      if (typeof feather !== "undefined") {
+        feather.replace()
+      }
     })
   })
 
@@ -128,7 +136,3 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 })
-
-// Declare feather variable to avoid errors
-const feather = require("feather-icons")
-

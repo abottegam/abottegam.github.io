@@ -90,6 +90,7 @@ img {
   text-align: center;
   font-family: "VT323", monospace;
   font-size: 1rem;
+  /* Removed @apply directive, using direct CSS properties */
 }
 
 .pixel-btn:hover {
@@ -264,16 +265,19 @@ img {
 }
 
 @keyframes blink {
+
   from,
   to {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -281,9 +285,11 @@ img {
   100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-20px);
   }
+
   60% {
     transform: translateY(-10px);
   }
@@ -893,4 +899,3 @@ img {
     text-align: left;
   }
 }
-
